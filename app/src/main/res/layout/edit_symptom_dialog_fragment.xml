@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mankind.app.base.view.BaseTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:text="@string/tell_symptom_us"
+                android:textSize="18sp"
+                android:textColor="@color/text_low"
+                android:textStyle="bold"/>
+
+            <com.mankind.app.base.view.BaseImageView
+                android:id="@+id/button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.CardView
+            style="@style/EditTextBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <com.mankind.app.base.view.BaseEditText
+                style="@style/EditTextInput"
+                android:id="@+id/et_tell_symptom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="4"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:hint="@string/tell_your_symptom"/>
+
+        </android.support.v7.widget.CardView>
+
+        <com.mankind.app.base.view.BaseImageButton
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            style="@style/ButtonBlueIcon"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

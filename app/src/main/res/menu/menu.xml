@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/symptom"
+            android:checked="false"
+            android:title="@string/nav_symptom"
+            android:icon="@drawable/notification"/>
+        <item
+            android:id="@+id/account"
+            android:checked="false"
+            android:title="@string/nav_account"
+            android:icon="@drawable/user_profile"/>
+        <item
+            android:id="@+id/help"
+            android:checked="false"
+            android:title="@string/nav_help"
+            android:icon="@drawable/help"/>
+        <item
+            android:id="@+id/setting"
+            android:checked="false"
+            android:title="@string/nav_setting"
+            android:icon="@drawable/setting"/>
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:title="@string/nav_logout"
+            android:icon="@drawable/logout"/>
+
+    </group>
+</menu>
